@@ -1,0 +1,10 @@
+---
+title: "SafeLawBench: Towards Safe Alignment of Large Language Models"
+collection: publications
+category: conference paper
+permalink: /publication/2025-05-safelawbench-number-1.md
+date: 2025-05
+venue: 'ACL 2025'
+paperurl: 'http://www.arxiv.org/abs/2506.06636'
+citation: 'Cao C, Zhu H, Ji J, et al. SafeLawBench: Towards Safe Alignment of Large Language Models[J]. arXiv preprint arXiv:2506.06636, 2025.'
+---
