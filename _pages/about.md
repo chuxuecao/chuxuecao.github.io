@@ -13,20 +13,21 @@ Hi! I am a first-year PhD student at the Hong Kong University of Science and Tec
 My research interests include AI for Mathematics (AI4Math), Formal Reasoning, and Large Language Model (LLM) Safety. 
 
 
-<a id="publications"></a>
+<div id="publications"></div>
+
 ## Publications
 ### Preprint
-{% raw %}{% for publication in site.publications reversed %}
-  {% if publication.category == 'manuscripts' %}
-    * [**{{ publication.title }}**]({{ publication.paperurl }})  
-      *Venue*: {{ publication.venue }}, {{ publication.date }}
-  {% endif %}
-{% endfor %}{% endraw %}
+{%- for publication in site.publications reversed -%}
+  {%- if publication.category == 'manuscripts' -%}
+* [**{{ publication.title }}**]({{ publication.paperurl }})  
+  *Venue*: {{ publication.venue }}, {{ publication.date }}
+  {%- endif -%}
+{%- endfor -%}
 
 ### Conferences
-{% raw %}{% for publication in site.publications reversed %}
-  {% if publication.category == 'conferences' %}
-    * [**{{ publication.title }}**]({{ publication.paperurl }})  
-      *Venue*: {{ publication.venue }}, {{ publication.date }}
-  {% endif %}
-{% endfor %}{% endraw %}
+{%- for publication in site.publications reversed -%}
+  {%- if publication.category == 'conferences' -%}
+* [**{{ publication.title }}**]({{ publication.paperurl }})  
+  *Venue*: {{ publication.venue }}, {{ publication.date }}
+  {%- endif -%}
+{%- endfor -%}
