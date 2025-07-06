@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Chuxue Cao 曹楚雪"
+title: "Chuxue Cao"
 author_profile: true
 redirect_from: 
   - /about/
