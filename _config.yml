@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "ChuxueCao's Page"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Chuxue Cao"
 # description              : &description "personal description"
