@@ -1,7 +1,7 @@
 ---
 title: "SafeLawBench: Towards Safe Alignment of Large Language Models"
 collection: publications
-category: conference paper
+category: conferences
 permalink: /publication/2025-05-safelawbench-number-1.md
 date: 2025-05
 venue: 'ACL 2025'
