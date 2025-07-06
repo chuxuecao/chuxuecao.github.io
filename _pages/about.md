@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Chuxue Cao 曹楚雪"
 author_profile: true
 redirect_from: 
   - /about/
@@ -12,4 +12,3 @@ I'm a first year undergraduate student from Hong Kong University of Science and 
 
 I am very fortunate to be advised by [Prof. Sirui Han](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan) and [Prof. Yike Guo](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo). 
 
-[Email](ccaoai@connect.ust.hk)
