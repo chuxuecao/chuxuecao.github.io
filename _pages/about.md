@@ -13,10 +13,18 @@ Hi! I am a first-year PhD student at the Hong Kong University of Science and Tec
 My research interests include AI for Mathematics (AI4Math), Formal Reasoning, and Large Language Model (LLM) Safety. 
 
 ## Publications
-
+### Preprint
 {% for publication in site.publications reversed %}
-  * **{{ publication.title }}**  
-    *Authors*: {{ publication.authors }}  
-    *Venue*: {{ publication.venue }}, {{ publication.year }}  
-    {% if publication.paperurl %}[Link]({{ publication.paperurl }}){% endif %}
+  {% if publication.category == 'manuscripts' %}
+    * [**{{ publication.title }}**]({{ publication.paperurl }})  
+      *Venue*: {{ publication.venue }}, {{ publication.date }}
+  {% endif %}
+{% endfor %}
+
+### Conferences
+{% for publication in site.publications reversed %}
+  {% if publication.category == 'conferences' %}
+    * [**{{ publication.title }}**]({{ publication.paperurl }})  
+      *Venue*: {{ publication.venue }}, {{ publication.date }}
+  {% endif %}
 {% endfor %}
