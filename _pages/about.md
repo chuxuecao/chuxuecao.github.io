@@ -16,17 +16,17 @@ My research interests include AI for Mathematics (AI4Math), Formal Reasoning, an
 <a id="publications"></a>
 ## Publications
 ### Preprint
-{% for publication in site.publications reversed %}
+{% raw %}{% for publication in site.publications reversed %}
   {% if publication.category == 'manuscripts' %}
     * [**{{ publication.title }}**]({{ publication.paperurl }})  
       *Venue*: {{ publication.venue }}, {{ publication.date }}
   {% endif %}
-{% endfor %}
+{% endfor %}{% endraw %}
 
 ### Conferences
-{% for publication in site.publications reversed %}
+{% raw %}{% for publication in site.publications reversed %}
   {% if publication.category == 'conferences' %}
     * [**{{ publication.title }}**]({{ publication.paperurl }})  
       *Venue*: {{ publication.venue }}, {{ publication.date }}
   {% endif %}
-{% endfor %}
+{% endfor %}{% endraw %}
