@@ -1,0 +1,11 @@
+---
+title: "Medical Scene Graphs and Reasoning"
+collection: publications
+category: manuscripts
+permalink: /publication/2025-06-20-Medical-Scene-Graph-number-2
+date: 2021-01-14
+venue: '2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
+paperurl: 'https://ieeexplore.ieee.org/document/9669882'
+citation: 'C. Cao et al., "Medical Scene Graphs and Reasoning," 2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), Houston, TX, USA, 2021, pp. 645-648, doi: 10.1109/BIBM52615.2021.9669882.'
+---
+
