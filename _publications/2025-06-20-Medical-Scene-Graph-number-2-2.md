@@ -1,7 +1,7 @@
 ---
 title: "Medical Scene Graphs and Reasoning"
 collection: publications
-category: manuscripts
+category: conferences
 permalink: /publication/2025-06-20-Medical-Scene-Graph-number-2
 date: 2021-01-14
 venue: '2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
