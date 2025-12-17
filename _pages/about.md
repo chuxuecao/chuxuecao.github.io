@@ -10,5 +10,5 @@ redirect_from:
 
 Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology. I am very fortunate to be advised by [Prof. Sirui Han](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan) and [Prof. Yike Guo](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo). Previously, I received my Bachelor’s degree from Jilin University and my Master’s degree from the University of Hong Kong.
 
-My research interests include AI for Mathematics (AI4Math), Formal Reasoning, and Large Language Model (LLM) Safety. 
+My research interests include Formal Reasoning, AI for Mathematics (AI4Math), and Large Language Model (LLM) Safety. 
 
