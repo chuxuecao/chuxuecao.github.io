@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-06-20-DREAM-number-2
 date: 2025-06-20
-venue: 'EMNLP'
+venue: 'EMNLP 2025'
 authors: '<b>Chuxue Cao</b>*, Mengze Li*, Juntao Dai, Jinluan Yang, Zijian Zhao, Shengyu Zhang, Weijie Shi, Chengzhong Liu, Sirui Han✉, Yike Guo✉'
 paperurl: 'https://arxiv.org/abs/2506.17104'
 highlight: 'Towards advanced mathematical reasoning through first-order logic theorem proving.'
