@@ -169,7 +169,7 @@ redirect_from:
   <section id="contact" class="single-page__section">
     <h2>📬 Contact</h2>
     <p>
-      I am always happy to discuss research. You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
+      I’m always open to discussing research-related topics. Feel free to reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
     </p>
   </section>
 </div>
