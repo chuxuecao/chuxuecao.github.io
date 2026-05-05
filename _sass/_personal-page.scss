@@ -3,17 +3,23 @@
 }
 
 @media screen and (min-width: 1024px) {
+  body #main::before,
+  body #main::after,
+  div#main::before,
+  div#main::after {
+    display: none !important;
+    content: none !important;
+  }
+
   body #main,
   div#main {
     display: flex !important;
     align-items: flex-start;
-    gap: 2.5rem !important;
-    max-width: 1800px !important;
-    width: auto !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
+    gap: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
     box-sizing: border-box;
   }
 
@@ -22,13 +28,12 @@
   .sidebar.sticky {
     position: sticky !important;
     top: 80px !important;
-    left: auto !important;
-    right: auto !important;
-    flex: 0 0 220px !important;
-    width: 220px !important;
-    max-width: 220px !important;
+    left: 0 !important;
+    flex: 0 0 260px !important;
+    width: 260px !important;
+    max-width: 260px !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 2rem 1.5rem !important;
     height: auto !important;
     max-height: calc(100vh - 100px) !important;
     overflow-y: auto !important;
@@ -40,10 +45,10 @@
   div#main > article.page {
     flex: 1 1 auto !important;
     width: auto !important;
-    max-width: none !important;
+    max-width: 1400px !important;
     float: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 auto !important;
+    padding: 2rem 4rem !important;
     min-width: 0;
   }
 }
