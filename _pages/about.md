@@ -24,7 +24,7 @@ redirect_from:
       👋 Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
       <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
-      My research focuses on formal reasoning, LLM safety, and AI for Mathematics,.
+      My research focuses on formal reasoning and LLM safety.
     </p>
   </section>
 
