@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="ScholarGPT academic writing teaser">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#db2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <rect x="112" y="74" width="360" height="302" rx="26" fill="#fdf2f8"/>
+  <rect x="148" y="126" width="244" height="18" rx="9" fill="#be185d" opacity=".75"/>
+  <rect x="148" y="178" width="278" height="14" rx="7" fill="#831843" opacity=".24"/>
+  <rect x="148" y="214" width="250" height="14" rx="7" fill="#831843" opacity=".24"/>
+  <rect x="148" y="250" width="290" height="14" rx="7" fill="#831843" opacity=".24"/>
+  <rect x="148" y="286" width="210" height="14" rx="7" fill="#831843" opacity=".24"/>
+  <circle cx="536" cy="178" r="74" fill="#fce7f3" opacity=".96"/>
+  <text x="536" y="190" fill="#be185d" font-family="Arial, sans-serif" font-size="44" font-weight="900" text-anchor="middle">GPT</text>
+  <text x="104" y="420" fill="#fdf2f8" font-family="Arial, sans-serif" font-size="30" font-weight="800">Discipline-specific paper writing</text>
+</svg>

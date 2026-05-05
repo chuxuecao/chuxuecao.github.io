@@ -1,0 +1,36 @@
+{% include base_path %}
+{% assign paper = include.paper %}
+{% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign paper_link = paper.paperurl | default: paper.url %}
+{% if paper.paperurl %}
+  {% assign link_target = "_blank" %}
+  {% assign link_rel = "noopener" %}
+{% else %}
+  {% assign paper_link = paper.url | prepend: base_path %}
+  {% assign link_target = "_self" %}
+  {% assign link_rel = "" %}
+{% endif %}
+
+<a class="publication-card" href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}" aria-label="Open {{ paper_title }}">
+  <div class="publication-card__figure">
+    {% if paper.teaser %}
+      <img src="{% if paper.teaser contains '://' %}{{ paper.teaser }}{% else %}{{ paper.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ paper_title }} teaser">
+    {% else %}
+      <div class="publication-card__placeholder">Paper</div>
+    {% endif %}
+  </div>
+  <div class="publication-card__body">
+    <div class="publication-card__meta">
+      <span>{{ paper.venue }}</span>
+      <span>{{ paper.date | default: "1900-01-01" | date: "%Y" }}</span>
+    </div>
+    <h3>{{ paper_title }}</h3>
+    {% if paper.authors %}
+      <p class="publication-card__authors">{{ paper.authors }}</p>
+    {% endif %}
+    {% if paper.highlight %}
+      <p class="publication-card__highlight">{{ paper.highlight }}</p>
+    {% endif %}
+    <span class="publication-card__cta">Read paper</span>
+  </div>
+</a>

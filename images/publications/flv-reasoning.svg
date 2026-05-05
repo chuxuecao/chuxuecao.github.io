@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="Formal logic verification reasoning teaser">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="ok" x1="0" x2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="34" fill="url(#bg)"/>
+  <circle cx="610" cy="70" r="130" fill="#60a5fa" opacity=".18"/>
+  <circle cx="84" cy="392" r="155" fill="#93c5fd" opacity=".14"/>
+  <g fill="none" stroke="#dbeafe" stroke-width="5" stroke-linecap="round" opacity=".92">
+    <path d="M132 116h174"/>
+    <path d="M132 166h128"/>
+    <path d="M132 216h174"/>
+  </g>
+  <g fill="#eff6ff">
+    <rect x="82" y="82" width="278" height="178" rx="24" opacity=".16"/>
+    <text x="112" y="318" font-family="Arial, sans-serif" font-size="28" font-weight="700">Natural reasoning</text>
+  </g>
+  <path d="M372 168h88" stroke="#bfdbfe" stroke-width="7" stroke-linecap="round"/>
+  <path d="M444 140l32 28-32 28" fill="none" stroke="#bfdbfe" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g>
+    <rect x="488" y="86" width="148" height="148" rx="26" fill="#eff6ff"/>
+    <path d="M526 160l28 28 56-68" fill="none" stroke="url(#ok)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="462" y="318" fill="#eff6ff" font-family="Arial, sans-serif" font-size="28" font-weight="700">Formal verifier</text>
+  </g>
+  <rect x="108" y="354" width="504" height="48" rx="24" fill="#eff6ff" opacity=".16"/>
+  <text x="139" y="386" fill="#eff6ff" font-family="Arial, sans-serif" font-size="22" font-weight="700">Interleaved feedback for stronger LLM reasoning</text>
+</svg>
