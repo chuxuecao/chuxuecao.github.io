@@ -8,6 +8,15 @@ redirect_from:
 ---
 
 {% assign sorted_publications = site.publications | sort: "date" | reverse %}
+{% assign selected_papers = "" | split: "," %}
+{% assign other_papers = "" | split: "," %}
+{% for paper in sorted_publications %}
+  {% if paper.teaser %}
+    {% assign selected_papers = selected_papers | push: paper %}
+  {% else %}
+    {% assign other_papers = other_papers | push: paper %}
+  {% endif %}
+{% endfor %}
 
 <div class="single-page">
   <section id="about" class="single-page__hero">
@@ -27,31 +36,36 @@ redirect_from:
 
   <section id="research" class="single-page__section">
     <h2>Research</h2>
-    <p>I study how language models can reason more reliably, verify their own intermediate steps, and behave safely in high-stakes settings.</p>
-    <div class="research-grid">
-      <div class="research-card">
-        <h3>Formal Reasoning</h3>
-        <p>Connecting natural language reasoning with formal logic verification, theorem proving, and symbolic feedback.</p>
-      </div>
-      <div class="research-card">
-        <h3>AI for Mathematics</h3>
-        <p>Building methods and benchmarks that push LLMs toward stronger mathematical problem solving.</p>
-      </div>
-      <div class="research-card">
-        <h3>LLM Safety</h3>
-        <p>Evaluating and aligning models for safer behavior in legal, multilingual, and domain-specific scenarios.</p>
-      </div>
-    </div>
+    <p class="research-summary">I study how language models can reason more reliably, verify their own intermediate steps, and behave safely in high-stakes settings. My work connects natural language reasoning with formal logic verification and theorem proving, aiming to build methods and benchmarks that push LLMs toward stronger mathematical problem solving and safe alignment in legal, multilingual, and domain-specific scenarios.</p>
   </section>
 
   <section id="publications" class="single-page__section">
     <h2>Selected Publications</h2>
-    <p>Recent work across formal verification, reasoning benchmarks, safety evaluation, and domain-specific language models.</p>
     <div class="publication-grid">
-      {% for paper in sorted_publications %}
+      {% for paper in selected_papers %}
         {% include publication-card.html paper=paper %}
       {% endfor %}
     </div>
+  </section>
+
+  <section id="other-publications" class="single-page__section">
+    <h2>Other Publications</h2>
+    <ul class="other-publications-list">
+      {% for paper in other_papers %}
+        {% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
+        <li>
+          <strong>
+            {% if paper.paperurl or paper.url %}
+              <a href="{{ paper.paperurl | default: paper.url }}">{{ paper_title }}</a>
+            {% else %}
+              {{ paper_title }}
+            {% endif %}
+          </strong><br>
+          {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
+          <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
+        </li>
+      {% endfor %}
+    </ul>
   </section>
 
   <section id="contact" class="single-page__section">
