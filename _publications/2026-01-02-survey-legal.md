@@ -5,6 +5,6 @@ category: manuscripts
 permalink: /publication/2026-01-02-survey-legal
 date: 2026-01-02
 venue: 'Preprints'
-authors: 'S Han, Z Kou, R Li, Y Zhang, Y Zhou, C Cao, H Zhu, K Pan, H Li, C He, ...'
+authors: 'Sirui Han, Zhaohui Kou, Runze Li, Yuxuan Zhang, Yujin Zhou, <b>Chuxue Cao</b>, Han Zhu, Kunhao Pan, Haoran Li, Conghui He, Lijun Wu, Yike Guo'
 citation: 'Han S, Kou Z, Li R, et al. Trustworthy Legal Reasoning: A Comprehensive Survey. Preprints, 2026.'
 ---

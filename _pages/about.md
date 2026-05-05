@@ -20,16 +20,12 @@ redirect_from:
 
 <div class="single-page">
   <section id="about" class="single-page__section" style="margin-top: 1rem;">
-    <p class="single-page__lead" style="font-size: 1.15rem; color: #111827; max-width: 900px;">
+    <p class="single-page__lead" style="color: #111827; max-width: 100%;">
       Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
       <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
       My research focuses on formal reasoning, AI for Mathematics, and LLM safety.
     </p>
-    <div class="single-page__actions">
-      <a class="single-page__button" href="#publications">View Publications</a>
-      <a class="single-page__button single-page__button--ghost" href="{{ site.author.googlescholar }}">Google Scholar</a>
-    </div>
   </section>
 
   <section id="research" class="single-page__section">
@@ -60,7 +56,7 @@ redirect_from:
               {{ paper_title }}
             {% endif %}
           </strong><br>
-          {% if paper.authors %}{{ paper.authors | replace: 'Chuxue Cao*', '<strong>Chuxue Cao*</strong>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}<br>{% endif %}
+          {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
           <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
         </li>
         {% endif %}
@@ -80,7 +76,7 @@ redirect_from:
               {{ paper_title }}
             {% endif %}
           </strong><br>
-          {% if paper.authors %}{{ paper.authors | replace: 'Chuxue Cao*', '<strong>Chuxue Cao*</strong>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}<br>{% endif %}
+          {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
           <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
         </li>
         {% endif %}
