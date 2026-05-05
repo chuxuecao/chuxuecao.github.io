@@ -16,24 +16,17 @@
     {% if paper.teaser %}
       <img src="{% if paper.teaser contains '://' %}{{ paper.teaser }}{% else %}{{ paper.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ paper_title }} teaser">
     {% endif %}
+    {% if paper.venue %}
+      <span class="publication-card__badge">{{ paper.venue }}</span>
+    {% endif %}
   </div>
   <div class="publication-card__body">
-    {% if paper.venue == 'ICML 2026' %}
-      <span class="publication-card__badge">ICML 2026</span>
-    {% endif %}
     <h3 class="publication-card__title">
       <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}">{{ paper_title }}</a>
     </h3>
     {% if paper.authors %}
       <p class="publication-card__authors">{{ paper.authors }}</p>
     {% endif %}
-    <p class="publication-card__venue">
-      {% if paper.venue == 'ICML 2026' %}
-        <em>{{ paper.venue }}</em>
-      {% else %}
-        <em>{{ paper.venue }}</em>, {{ paper.date | default: "1900-01-01" | date: "%Y" }}
-      {% endif %}
-    </p>
     {% if paper.highlight %}
       <p class="publication-card__highlight">{{ paper.highlight }}</p>
     {% endif %}
