@@ -107,7 +107,7 @@ redirect_from:
             <strong>The University of Hong Kong</strong>
           </div>
           <div class="resume-item__body">
-            Master's Degree<br>
+            Master's Degree<br>, Supervisor: Prof. Hailiang Chen
             MSc Artificial Intelligence, Faculty of Science
           </div>
         </div>
