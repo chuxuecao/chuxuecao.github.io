@@ -20,8 +20,7 @@ redirect_from:
 
 <div class="single-page">
   <section id="about" class="single-page__section" style="margin-top: 1rem;">
-    <h1>Reasoning, safety, and trustworthy language models.</h1>
-    <p class="single-page__lead">
+    <p class="single-page__lead" style="font-size: 1.15rem; color: #111827; max-width: 900px;">
       Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
       <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
@@ -48,9 +47,10 @@ redirect_from:
   </section>
 
   <section id="other-publications" class="single-page__section">
-    <h2>Other Publications</h2>
+    <h2>Conference Papers</h2>
     <ul class="other-publications-list">
       {% for paper in other_papers %}
+        {% if paper.category == 'conferences' %}
         {% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
         <li>
           <strong>
@@ -60,9 +60,30 @@ redirect_from:
               {{ paper_title }}
             {% endif %}
           </strong><br>
-          {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
+          {% if paper.authors %}{{ paper.authors | replace: 'Chuxue Cao*', '<strong>Chuxue Cao*</strong>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}<br>{% endif %}
           <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
         </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2 style="margin-top: 2.5rem;">Preprints</h2>
+    <ul class="other-publications-list">
+      {% for paper in other_papers %}
+        {% if paper.category == 'manuscripts' %}
+        {% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
+        <li>
+          <strong>
+            {% if paper.paperurl or paper.url %}
+              <a href="{{ paper.paperurl | default: paper.url }}">{{ paper_title }}</a>
+            {% else %}
+              {{ paper_title }}
+            {% endif %}
+          </strong><br>
+          {% if paper.authors %}{{ paper.authors | replace: 'Chuxue Cao*', '<strong>Chuxue Cao*</strong>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}<br>{% endif %}
+          <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
+        </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </section>

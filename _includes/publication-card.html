@@ -22,7 +22,7 @@
       <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}">{{ paper_title }}</a>
     </h3>
     {% if paper.authors %}
-      <p class="publication-card__authors"><strong>{{ paper.authors | replace: site.author.name, '<u>site.author.name</u>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}</strong></p>
+      <p class="publication-card__authors">{{ paper.authors | replace: 'Chuxue Cao*', '<strong>Chuxue Cao*</strong>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' | replace: '<strong><strong>', '<strong>' | replace: '</strong></strong>', '</strong>' }}</p>
     {% endif %}
     <p class="publication-card__venue">
       <em>{{ paper.venue }}</em>, {{ paper.date | default: "1900-01-01" | date: "%Y" }}
