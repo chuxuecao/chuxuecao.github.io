@@ -128,7 +128,7 @@ redirect_from:
             <strong>Jilin University</strong>
           </div>
           <div class="resume-item__body">
-            Bachelor's Degree, Supervisors: Prof. Renchu Guan, Prof. Xiaoyue Feng<br>
+            Bachelor's Degree (Honours), Supervisors: Prof. Renchu Guan, Prof. Xiaoyue Feng<br>
             Software Engineering (Pilot class), College of Software Engineering
           </div>
         </div>
