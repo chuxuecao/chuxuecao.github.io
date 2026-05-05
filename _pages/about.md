@@ -20,8 +20,8 @@ redirect_from:
 
 <div class="single-page">
   <section id="about" class="single-page__section" style="margin-top: 1rem;">
-    <p class="single-page__lead" style="color: #111827; max-width: 100%;">
-      Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
+    <p class="single-page__lead">
+      👋 Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
       <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
       My research focuses on formal reasoning, LLM safety, and AI for Mathematics,.
@@ -29,12 +29,12 @@ redirect_from:
   </section>
 
   <section id="research" class="single-page__section">
-    <h2>Research</h2>
+    <h2>🔍 Research</h2>
     <p class="research-summary">I study how language models can reason more reliably, verify their own intermediate steps, and behave safely in high-stakes settings. My work connects natural language reasoning with formal logic verification and theorem proving, aiming to build methods and benchmarks that push LLMs toward stronger mathematical problem solving and safe alignment in legal, multilingual, and domain-specific scenarios.</p>
   </section>
 
   <section id="publications" class="single-page__section">
-    <h2>Selected Publications</h2>
+    <h2>🌟 Selected Publications</h2>
     <div class="publication-grid">
       {% for paper in selected_papers %}
         {% include publication-card.html paper=paper %}
@@ -43,7 +43,7 @@ redirect_from:
   </section>
 
   <section id="other-publications" class="single-page__section">
-    <h2>Conference Papers</h2>
+    <h2>📝 Conference Papers</h2>
     <ul class="other-publications-list">
       {% for paper in other_papers %}
         {% if paper.category == 'conferences' %}
@@ -63,7 +63,7 @@ redirect_from:
       {% endfor %}
     </ul>
 
-    <h2 style="margin-top: 2.5rem;">Preprints</h2>
+    <h2 style="margin-top: 2.5rem;">🚀 Preprints</h2>
     <ul class="other-publications-list">
       {% for paper in other_papers %}
         {% if paper.category == 'manuscripts' %}
@@ -85,7 +85,7 @@ redirect_from:
   </section>
 
   <section id="education" class="single-page__section">
-    <h2>Education</h2>
+    <h2>🎓 Education</h2>
     <div class="resume-list">
       <div class="resume-item">
         <div class="resume-item__date">September 2024 - Now</div>
@@ -129,7 +129,7 @@ redirect_from:
   </section>
 
   <section id="experience" class="single-page__section">
-    <h2>Experience</h2>
+    <h2>💼 Experience</h2>
     <div class="resume-list">
       <div class="resume-item">
         <div class="resume-item__date">October 2025 - February 2026</div>
@@ -159,7 +159,7 @@ redirect_from:
   </section>
 
   <section id="contact" class="single-page__section">
-    <h2>Contact</h2>
+    <h2>📬 Contact</h2>
     <p>
       I am always happy to discuss research. You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
     </p>

@@ -56,8 +56,10 @@
 .single-page {
   --accent: #3b82f6;
   --accent-strong: #1d4ed8;
-  --ink-soft: #536071;
+  --ink-main: #334155;
+  --ink-soft: #64748b;
   --card-border: rgba(100, 116, 139, 0.22);
+  --text-size: 0.95rem;
 }
 
 .single-page section {
@@ -83,9 +85,9 @@
 
 .single-page__lead,
 .single-page__section > p, .research-summary {
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  color: var(--ink-main);
+  font-size: var(--text-size);
+  line-height: 1.6;
   max-width: 100%;
   margin-top: 0;
 }
@@ -146,12 +148,12 @@ html[data-theme="dark"] .single-page a:not(.single-page__button):not(.publicatio
 }
 
 .other-publications-list li {
-  margin-bottom: 0.6rem;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid var(--card-border);
-  color: var(--ink-soft);
-  line-height: 1.4;
-  font-size: 0.9rem;
+  color: var(--ink-main);
+  line-height: 1.5;
+  font-size: var(--text-size);
 }
 
 .other-publications-list li:last-child {
@@ -187,8 +189,8 @@ html[data-theme="dark"] .other-publications-list li strong {
 .resume-item {
   display: flex;
   gap: 1.5rem;
-  color: var(--ink-soft);
-  font-size: 0.9rem;
+  color: var(--ink-main);
+  font-size: var(--text-size);
   line-height: 1.5;
 }
 
@@ -253,14 +255,22 @@ html[data-theme="dark"] .resume-item__body {
   position: relative;
   background: #fff;
   border: 1px solid var(--card-border);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
-  padding: 0.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  padding: 0.3rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-card:hover .publication-card__figure {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
 .publication-card__figure img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 4px;
 }
 
 .publication-card__body {
@@ -308,10 +318,10 @@ html[data-theme="dark"] .publication-card__link {
 }
 
 .publication-card__authors {
-  margin: 0 0 0.2rem;
-  color: var(--ink-soft);
-  font-size: 0.9rem;
-  line-height: 1.4;
+  margin: 0 0 0.3rem;
+  color: var(--ink-main);
+  font-size: var(--text-size);
+  line-height: 1.5;
 }
 
 .publication-card__authors strong {
@@ -332,8 +342,8 @@ html[data-theme="dark"] .publication-card__link {
 .publication-card__highlight {
   margin: 0;
   color: var(--ink-soft);
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: var(--text-size);
+  line-height: 1.5;
 }
 
 html[data-theme="dark"] .single-page__lead,
