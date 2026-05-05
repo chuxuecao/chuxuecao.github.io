@@ -22,7 +22,16 @@
   </div>
   <div class="publication-card__body">
     <h3 class="publication-card__title">
-      <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}">{{ paper_title }}</a>
+      {{ paper_title }}
+      {% if paper_link %}
+        <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}" class="publication-card__resource-link">[Paper]</a>
+      {% endif %}
+      {% if paper.codeurl %}
+        <a href="{{ paper.codeurl }}" target="_blank" rel="noopener" class="publication-card__resource-link">[Code]</a>
+      {% endif %}
+      {% if paper.modelurl %}
+        <a href="{{ paper.modelurl }}" target="_blank" rel="noopener" class="publication-card__resource-link">[Model]</a>
+      {% endif %}
     </h3>
     {% if paper.authors %}
       <p class="publication-card__authors">{{ paper.authors }}</p>

@@ -49,13 +49,17 @@ redirect_from:
         {% if paper.category == 'conferences' %}
         {% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
         <li>
-          <strong>
-            {% if paper.paperurl or paper.url %}
-              <a href="{{ paper.paperurl | default: paper.url }}">{{ paper_title }}</a>
-            {% else %}
-              {{ paper_title }}
-            {% endif %}
-          </strong><br>
+          <strong>{{ paper_title }}</strong>
+          {% if paper.paperurl or paper.url %}
+            <a href="{{ paper.paperurl | default: paper.url }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Paper]</a>
+          {% endif %}
+          {% if paper.codeurl %}
+            <a href="{{ paper.codeurl }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Code]</a>
+          {% endif %}
+          {% if paper.modelurl %}
+            <a href="{{ paper.modelurl }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Model]</a>
+          {% endif %}
+          <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
           <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
         </li>
@@ -69,13 +73,17 @@ redirect_from:
         {% if paper.category == 'manuscripts' %}
         {% assign paper_title = paper.title | markdownify | remove: "<p>" | remove: "</p>" %}
         <li>
-          <strong>
-            {% if paper.paperurl or paper.url %}
-              <a href="{{ paper.paperurl | default: paper.url }}">{{ paper_title }}</a>
-            {% else %}
-              {{ paper_title }}
-            {% endif %}
-          </strong><br>
+          <strong>{{ paper_title }}</strong>
+          {% if paper.paperurl or paper.url %}
+            <a href="{{ paper.paperurl | default: paper.url }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Paper]</a>
+          {% endif %}
+          {% if paper.codeurl %}
+            <a href="{{ paper.codeurl }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Code]</a>
+          {% endif %}
+          {% if paper.modelurl %}
+            <a href="{{ paper.modelurl }}" class="publication-card__resource-link" target="_blank" rel="noopener">[Model]</a>
+          {% endif %}
+          <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
           <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
         </li>
