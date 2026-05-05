@@ -30,7 +30,7 @@ redirect_from:
 
   <section id="research" class="single-page__section">
     <h2>🔍 Research</h2>
-    <p class="research-summary">I study how language models can reason more reliably, verify their own intermediate steps, and behave safely in high-stakes settings. My work connects natural language reasoning with formal logic verification and theorem proving, aiming to build methods and benchmarks that push LLMs toward stronger problem solving and safe alignment in legal and domain-specific scenarios.</p>
+    <p class="research-summary">I study how language models can reason more reliably, verify their own intermediate steps, and behave safely in high-stakes settings. My work connects natural language reasoning with formal logic verification, aiming to build methods and benchmarks that push LLMs toward stronger logical reasoning and safe alignment.</p>
   </section>
 
   <section id="publications" class="single-page__section">
