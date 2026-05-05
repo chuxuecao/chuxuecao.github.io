@@ -19,8 +19,7 @@ redirect_from:
 {% endfor %}
 
 <div class="single-page">
-  <section id="about" class="single-page__hero">
-    <div class="single-page__eyebrow">PhD Student - HKUST</div>
+  <section id="about" class="single-page__section" style="margin-top: 1rem;">
     <h1>Reasoning, safety, and trustworthy language models.</h1>
     <p class="single-page__lead">
       Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
@@ -70,10 +69,10 @@ redirect_from:
 
   <section id="contact" class="single-page__section">
     <h2>Contact</h2>
-    <div class="contact-panel">
+    <p>
       I am always happy to discuss research on formal reasoning, AI4Math, and LLM safety.
       You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
-    </div>
+    </p>
   </section>
 </div>
 

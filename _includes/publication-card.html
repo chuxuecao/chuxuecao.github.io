@@ -15,23 +15,18 @@
   <div class="publication-card__figure">
     {% if paper.teaser %}
       <img src="{% if paper.teaser contains '://' %}{{ paper.teaser }}{% else %}{{ paper.teaser | prepend: '/images/' | prepend: base_path }}{% endif %}" alt="{{ paper_title }} teaser">
-    {% else %}
-      <div class="publication-card__placeholder">Paper</div>
     {% endif %}
   </div>
   <div class="publication-card__body">
-    <div class="publication-card__meta">
-      <span>{{ paper.venue }}</span>
-      <span>{{ paper.date | default: "1900-01-01" | date: "%Y" }}</span>
-    </div>
-    <h3>
-      <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}" class="publication-card__link">
-        {{ paper_title }}
-      </a>
+    <h3 class="publication-card__title">
+      <a href="{{ paper_link }}" target="{{ link_target }}" rel="{{ link_rel }}">{{ paper_title }}</a>
     </h3>
     {% if paper.authors %}
-      <p class="publication-card__authors">{{ paper.authors }}</p>
+      <p class="publication-card__authors"><strong>{{ paper.authors | replace: site.author.name, '<u>site.author.name</u>' | replace: 'Chuxue Cao', '<strong>Chuxue Cao</strong>' }}</strong></p>
     {% endif %}
+    <p class="publication-card__venue">
+      <em>{{ paper.venue }}</em>, {{ paper.date | default: "1900-01-01" | date: "%Y" }}
+    </p>
     {% if paper.highlight %}
       <p class="publication-card__highlight">{{ paper.highlight }}</p>
     {% endif %}
