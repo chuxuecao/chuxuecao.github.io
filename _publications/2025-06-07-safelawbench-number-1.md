@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-06-07-safelawbench-number-1
 date: 2025-06-07
-venue: 'ACL 2026 Findings'
+venue: 'ACL Findings 2025'
 authors: '<b>Chuxue Cao</b>*, Han Zhu*, Jiaming Ji, Qichao Sun, Zhenghao Zhu, Yinyu Wu, Juntao Dai, Yaodong Yang, Sirui Han✉, Yike Guo✉'
 paperurl: 'http://www.arxiv.org/abs/2506.06636'
 highlight: 'A benchmark for safe alignment of large language models in legal scenarios.'
