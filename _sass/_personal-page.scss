@@ -3,40 +3,42 @@
 }
 
 @media screen and (min-width: 1024px) {
-  #main {
+  body #main,
+  div#main {
     display: flex !important;
     align-items: flex-start;
-    gap: 2.5rem;
+    gap: 2.5rem !important;
     max-width: 1800px !important;
+    width: auto !important;
     margin-left: auto !important;
     margin-right: auto !important;
     padding-left: 2.5rem !important;
     padding-right: 2.5rem !important;
+    box-sizing: border-box;
   }
 
+  body #main > .sidebar,
+  div#main > .sidebar,
   .sidebar.sticky {
     position: sticky !important;
-    top: 80px;
-    flex: 0 0 220px;
+    top: 80px !important;
+    left: auto !important;
+    right: auto !important;
+    flex: 0 0 220px !important;
     width: 220px !important;
+    max-width: 220px !important;
     margin: 0 !important;
     padding: 0 !important;
     height: auto !important;
-    overflow: visible !important;
+    max-height: calc(100vh - 100px) !important;
+    overflow-y: auto !important;
+    float: none !important;
+    transform: none !important;
   }
 
-  .sidebar:not(.sticky) {
-    flex: 0 0 220px;
-    width: 220px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    position: relative !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
-
-  article.page {
-    flex: 1 1 auto;
+  body #main > article.page,
+  div#main > article.page {
+    flex: 1 1 auto !important;
     width: auto !important;
     max-width: none !important;
     float: none !important;
