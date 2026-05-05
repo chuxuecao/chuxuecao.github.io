@@ -282,8 +282,9 @@ html[data-theme="dark"] .resume-item__body {
 
 .publication-card h3 {
   margin: 0 0 0.2rem;
-  font-size: 1.05rem;
-  line-height: 1.35;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-weight: 700;
 }
 
 .publication-card__link {
@@ -303,7 +304,7 @@ html[data-theme="dark"] .publication-card__link {
 
 .publication-card__authors {
   margin: 0 0 0.2rem;
-  color: #111827;
+  color: var(--ink-soft);
   font-size: 0.9rem;
   line-height: 1.4;
 }
@@ -327,7 +328,7 @@ html[data-theme="dark"] .publication-card__link {
   margin: 0;
   color: var(--ink-soft);
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 html[data-theme="dark"] .single-page__lead,
