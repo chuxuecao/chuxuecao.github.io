@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2024-06-09-ScholarGPT
 date: 2024-06-09
-venue: 'PACIS'
+venue: 'Pacific-Asia Conference on Information Systems (PACIS)'
 authors: '<b>Chuxue Cao</b>, Ziqing Yuan, Hailiang Chen'
 paperurl: 'https://aisel.aisnet.org/pacis2024/track04_dessci/track04_dessci/1/'
 highlight: 'Fine-tuning large language models for discipline-specific academic paper writing.'
