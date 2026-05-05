@@ -120,7 +120,7 @@ redirect_from:
             <strong>Jilin University</strong>
           </div>
           <div class="resume-item__body">
-            Bachelor's Degree<br>
+            Bachelor's Degree, Supervisors: Prof. Renchu Guan, Prof. Xiaoyue Feng<br>
             Software Engineering (Science experimental class), College of Software Engineering
           </div>
         </div>
@@ -140,6 +140,18 @@ redirect_from:
           <div class="resume-item__body">
             Research Intern, Supervisor: Lijun Wu<br>
             OpenDataLab, OpenDataArena
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <div class="resume-item__date">September 2023 - August 2024</div>
+        <div class="resume-item__content">
+          <div class="resume-item__header">
+            <strong>The University of Hong Kong</strong>
+          </div>
+          <div class="resume-item__body">
+            Research Assistant, Supervisor: Prof. Hailiang Chen
           </div>
         </div>
       </div>
