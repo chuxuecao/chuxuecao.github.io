@@ -24,7 +24,7 @@ redirect_from:
       Hi! I am a second-year PhD student at the Hong Kong University of Science and Technology, advised by
       <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
-      My research focuses on formal reasoning, AI for Mathematics, and LLM safety.
+      My research focuses on formal reasoning, LLM safety, and AI for Mathematics,.
     </p>
   </section>
 
@@ -107,7 +107,7 @@ redirect_from:
             <strong>The University of Hong Kong</strong>
           </div>
           <div class="resume-item__body">
-            Master's Degree<br>, Supervisor: Prof. Hailiang Chen
+            Master's Degree<br>
             MSc Artificial Intelligence, Faculty of Science
           </div>
         </div>
@@ -121,7 +121,7 @@ redirect_from:
           </div>
           <div class="resume-item__body">
             Bachelor's Degree, Supervisors: Prof. Renchu Guan, Prof. Xiaoyue Feng<br>
-            Software Engineering (Science experimental class), College of Software Engineering
+            Software Engineering (Pilot class), College of Software Engineering
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@ redirect_from:
             <strong>Shanghai Artificial Intelligence Laboratory</strong>
           </div>
           <div class="resume-item__body">
-            Research Intern, Supervisor: Lijun Wu<br>
+            Research Intern, Mentor: Lijun Wu<br>
             OpenDataLab, OpenDataArena
           </div>
         </div>
@@ -161,8 +161,7 @@ redirect_from:
   <section id="contact" class="single-page__section">
     <h2>Contact</h2>
     <p>
-      I am always happy to discuss research on formal reasoning, AI4Math, and LLM safety.
-      You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
+      I am always happy to discuss research. You can reach me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
     </p>
   </section>
 </div>
