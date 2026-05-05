@@ -126,6 +126,58 @@ html[data-theme="dark"] .other-publications-list li strong {
   color: var(--accent-strong);
 }
 
+.resume-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.resume-item {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.resume-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.resume-item__header strong {
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+html[data-theme="dark"] .resume-item__header strong {
+  color: #f8fafc;
+}
+
+.resume-item__date {
+  font-style: italic;
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+
+.resume-item__body {
+  color: var(--ink-soft);
+}
+
+html[data-theme="dark"] .resume-item__date,
+html[data-theme="dark"] .resume-item__body {
+  color: #cbd5e1;
+}
+
+@media (max-width: 600px) {
+  .resume-item__header {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+}
+
 .publication-grid {
   display: flex;
   flex-direction: column;

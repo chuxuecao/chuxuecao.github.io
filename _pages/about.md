@@ -84,6 +84,60 @@ redirect_from:
     </ul>
   </section>
 
+  <section id="education" class="single-page__section">
+    <h2>Education</h2>
+    <div class="resume-list">
+      <div class="resume-item">
+        <div class="resume-item__header">
+          <strong>Hong Kong University of Science and Technology</strong>
+          <span class="resume-item__date">September 2024 - Now</span>
+        </div>
+        <div class="resume-item__body">
+          PhD student, Supervisors: Prof. Sirui Han, Prof. Yike Guo<br>
+          Division of Emerging Interdisciplinary Areas, Academy of Interdisciplinary Studies
+        </div>
+      </div>
+      
+      <div class="resume-item">
+        <div class="resume-item__header">
+          <strong>The University of Hong Kong</strong>
+          <span class="resume-item__date">September 2022 - January 2024</span>
+        </div>
+        <div class="resume-item__body">
+          Master's Degree<br>
+          MSc Artificial Intelligence, Faculty of Science
+        </div>
+      </div>
+      
+      <div class="resume-item">
+        <div class="resume-item__header">
+          <strong>Jilin University</strong>
+          <span class="resume-item__date">September 2018 - July 2022</span>
+        </div>
+        <div class="resume-item__body">
+          Bachelor's Degree<br>
+          Software Engineering (Science experimental class), College of Software Engineering
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="single-page__section">
+    <h2>Experience</h2>
+    <div class="resume-list">
+      <div class="resume-item">
+        <div class="resume-item__header">
+          <strong>Shanghai Artificial Intelligence Laboratory</strong>
+          <span class="resume-item__date">October 2025 - February 2026</span>
+        </div>
+        <div class="resume-item__body">
+          Research Intern, Supervisor: Lijun Wu<br>
+          OpenDataLab, OpenDataArena
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact" class="single-page__section">
     <h2>Contact</h2>
     <p>
