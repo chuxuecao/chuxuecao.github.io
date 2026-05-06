@@ -169,7 +169,7 @@ redirect_from:
   <section id="contact" class="single-page__section">
     <h2><span class="lang-en">📬 Contact</span><span class="lang-zh">📬 联系我</span></h2>
     <p>
-      <span class="lang-en">I’m always open to discussing research-related topics. Feel free to reach me at </span><span class="lang-zh">欢迎随时与我讨论相关研究。我的邮箱是 </span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
+      <span class="lang-en">I’m always open to discussing research-related topics. Feel free to reach me at </span><span class="lang-zh">欢迎交流～📮</span><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
     </p>
   </section>
 </div>
