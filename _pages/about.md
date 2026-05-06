@@ -30,7 +30,7 @@ redirect_from:
 
   <section id="research" class="single-page__section">
     <h2><span class="lang-en">🔍 Research</span><span class="lang-zh">🔍 研究方向</span></h2>
-    <p class="research-summary"><span class="lang-en">I study how language models can reason more reliably and safely. My work connects natural language reasoning with formal logic verification, aiming to build methods and benchmarks that push LLMs toward stronger logical reasoning and safe alignment.</span><span class="lang-zh">我主要研究大模型如何进行更可靠、安全的推理。我的工作将自然语言推理与形式化逻辑验证相结合，致力于后训练框架和安全评测基准，推动大模型向更可靠的逻辑推理与安全对齐发展。</span></p>
+    <p class="research-summary"><span class="lang-en">I study how language models can reason more reliably and safely. My work connects natural language reasoning with formal logic verification, aiming to build agentic post-training framework and benchmarks that push LLMs toward stronger logical reasoning and safe alignment.</span><span class="lang-zh">我主要研究大模型如何进行更可靠、安全的推理。我的工作将自然语言推理与形式化逻辑验证相结合，致力于后训练框架和安全评测基准，推动大模型向更可靠的逻辑推理与安全对齐发展。</span></p>
   </section>
 
   <section id="publications" class="single-page__section">
