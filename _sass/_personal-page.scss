@@ -2,8 +2,9 @@
   scroll-behavior: smooth;
 }
 
-[data-lang="en"] .lang-zh { display: none !important; }
 [data-lang="zh"] .lang-en { display: none !important; }
+.lang-zh { display: none; }
+[data-lang="zh"] .lang-zh { display: inline !important; }
 
 @media screen and (min-width: 1024px) {
   body #main::before,

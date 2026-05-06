@@ -2,6 +2,14 @@
 
 <!-- start custom head snippets -->
 
+<script>
+  // Set lang attribute IMMEDIATELY to avoid flash of mixed content
+  (function() {
+    var savedLang = localStorage.getItem('site-lang') || 'en';
+    document.documentElement.setAttribute('data-lang', savedLang);
+  })();
+</script>
+
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
@@ -21,22 +29,23 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const langToggle = document.getElementById('lang-toggle');
-    const langIndicator = document.getElementById('lang-indicator');
-    
-    // Load saved lang or default to en
-    let currentLang = localStorage.getItem('site-lang') || 'en';
-    document.documentElement.setAttribute('data-lang', currentLang);
+    var langToggle = document.getElementById('lang-toggle');
+    var langIndicator = document.getElementById('lang-indicator');
+
+    var currentLang = document.documentElement.getAttribute('data-lang') || 'en';
     if (langIndicator) {
       langIndicator.textContent = currentLang === 'en' ? '中' : 'EN';
     }
 
     if (langToggle) {
-      langToggle.addEventListener('click', function() {
+      langToggle.addEventListener('click', function(e) {
+        e.preventDefault();
         currentLang = currentLang === 'en' ? 'zh' : 'en';
         document.documentElement.setAttribute('data-lang', currentLang);
         localStorage.setItem('site-lang', currentLang);
-        langIndicator.textContent = currentLang === 'en' ? '中' : 'EN';
+        if (langIndicator) {
+          langIndicator.textContent = currentLang === 'en' ? '中' : 'EN';
+        }
       });
     }
   });
