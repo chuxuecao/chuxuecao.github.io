@@ -18,3 +18,26 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <!-- end custom head snippets -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const langToggle = document.getElementById('lang-toggle');
+    const langIndicator = document.getElementById('lang-indicator');
+    
+    // Load saved lang or default to en
+    let currentLang = localStorage.getItem('site-lang') || 'en';
+    document.documentElement.setAttribute('data-lang', currentLang);
+    if (langIndicator) {
+      langIndicator.textContent = currentLang === 'en' ? '中' : 'EN';
+    }
+
+    if (langToggle) {
+      langToggle.addEventListener('click', function() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        document.documentElement.setAttribute('data-lang', currentLang);
+        localStorage.setItem('site-lang', currentLang);
+        langIndicator.textContent = currentLang === 'en' ? '中' : 'EN';
+      });
+    }
+  });
+</script>
