@@ -7,7 +7,7 @@ date: 2025-06-07
 venue: 'ACL Findings 2025'
 authors: '<b>Chuxue Cao</b>*, Han Zhu*, Jiaming Ji, Qichao Sun, Zhenghao Zhu, Yinyu Wu, Juntao Dai, Yaodong Yang, Sirui Han✉, Yike Guo✉'
 paperurl: 'http://www.arxiv.org/abs/2506.06636'
-highlight: 'A Legal-Perspective Benchmark for Safe Alignment of Large Language Models.'
+highlight: 'A legal-perspective benchmark for safe alignment of large language models.'
 teaser: 'publications/safelaw-architecture.png'
 citation: 'Cao C, Zhu H, Ji J, et al. SafeLawBench: Towards Safe Alignment of Large Language Models[J]. arXiv preprint arXiv:2506.06636, 2025.' 
 ---
