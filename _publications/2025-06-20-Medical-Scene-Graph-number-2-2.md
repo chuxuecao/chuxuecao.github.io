@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-06-20-Medical-Scene-Graph-number-2
 date: 2021-01-14
-venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM)'
+venue: 'IEEE International Conference on Bioinformatics and Biomedicine (BIBM) 2021'
 authors: '<b>Chuxue Cao</b>, Yiming He, Yuzhen Chen, Chunli Song, Hao Ling, Renchu Guan, Xiaoyue Feng'
 paperurl: 'https://ieeexplore.ieee.org/document/9669882'
 highlight: 'Structured medical scene graphs for visual medical reasoning.'

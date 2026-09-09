@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: 2025-05-04-hkmmlu-number-3
 date: 2025-05-04
-venue: 'arXiv'
+venue: 'arXiv 2025'
 authors: '<b>Chuxue Cao</b>*, Zhenghao Zhu*, Junqi Zhu, Guoying Lu, Siyu Peng, Juntao Dai, Weijie Shi, Sirui Han✉, Yike Guo✉'
 paperurl: 'https://arxiv.org/abs/2505.02177'
 highlight: 'A Hong Kong massive multi-task language understanding benchmark.'
