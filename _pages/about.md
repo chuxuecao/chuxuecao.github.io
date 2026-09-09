@@ -61,12 +61,7 @@ redirect_from:
           {% endif %}
           <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
-          {% assign paper_year = paper.date | date: "%Y" %}
-          {% assign venue_has_year = false %}
-          {% if paper.venue contains "2023" or paper.venue contains "2024" or paper.venue contains "2025" or paper.venue contains "2026" or paper.venue contains "2027" or paper.venue contains "2028" %}
-            {% assign venue_has_year = true %}
-          {% endif %}
-          <em>{{ paper.venue }}</em>{% unless venue_has_year %}, {{ paper_year }}{% endunless %}
+          <em>{{ paper.venue }}</em>
         </li>
         {% endif %}
       {% endfor %}
@@ -90,12 +85,7 @@ redirect_from:
           {% endif %}
           <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
-          {% assign paper_year = paper.date | date: "%Y" %}
-          {% assign venue_has_year = false %}
-          {% if paper.venue contains "2023" or paper.venue contains "2024" or paper.venue contains "2025" or paper.venue contains "2026" or paper.venue contains "2027" or paper.venue contains "2028" %}
-            {% assign venue_has_year = true %}
-          {% endif %}
-          <em>{{ paper.venue }}</em>{% unless venue_has_year %}, {{ paper_year }}{% endunless %}
+          <em>{{ paper.venue }}</em>
         </li>
         {% endif %}
       {% endfor %}
