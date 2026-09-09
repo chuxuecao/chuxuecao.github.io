@@ -3,7 +3,7 @@ title: "MedInsightBench: Evaluating Medical Analytics Agents Through Multi-Step 
 collection: publications
 category: conferences
 permalink: /publication/2025-12-13-medinsightbench
-date: 2026
+date: 2026-09-01
 venue: 'EMNLP 2026'
 authors: 'Zhenghao Zhu*, <b>Chuxue Cao</b>*, Yuanfeng Song, Xing Chen✉, Caleb Chen Cao, Sirui Han✉, Yike Guo'
 paperurl: 'https://arxiv.org/abs/2512.13297'
