@@ -22,9 +22,9 @@ redirect_from:
   <section id="about" class="single-page__section" style="margin-top: 1rem;">
     <p class="single-page__lead">
       <span class="lang-en">👋 Hi! I am a third-year PhD student at the Hong Kong University of Science and Technology, advised by
-      <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">Prof. Sirui Han</a>
+      <a href="https://siruihan2024.github.io">Prof. Sirui Han</a>
       and <a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">Prof. Yike Guo</a>.
-      My research focuses on AI safety & alignment and formal reasoning.</span><span class="lang-zh">👋 哈喽！我是香港科技大学的三年级博士生，师从<a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=sirui-han-siruihan">韩斯睿教授</a>和<a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">郭毅可教授</a>。我的研究方向为大模型安全对齐（LLM Safety & Alignment）与形式化推理（Formal Reasoning）。</span>
+      My research focuses on AI safety & alignment and formal reasoning.</span><span class="lang-zh">👋 哈喽！我是香港科技大学的三年级博士生，师从<a href="https://siruihan2024.github.io">韩斯睿教授</a>和<a href="https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo">郭毅可教授</a>。我的研究方向为大模型安全对齐（LLM Safety & Alignment）与形式化推理（Formal Reasoning）。</span>
     </p>
   </section>
 
