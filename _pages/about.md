@@ -61,7 +61,8 @@ redirect_from:
           {% endif %}
           <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
-          <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
+          {% assign paper_year = paper.date | date: "%Y" %}
+          <em>{{ paper.venue }}</em>{% unless paper.venue contains paper_year %}, {{ paper_year }}{% endunless %}
         </li>
         {% endif %}
       {% endfor %}
@@ -85,7 +86,8 @@ redirect_from:
           {% endif %}
           <br>
           {% if paper.authors %}{{ paper.authors }}<br>{% endif %}
-          <em>{{ paper.venue }}</em>, {{ paper.date | date: "%Y" }}
+          {% assign paper_year = paper.date | date: "%Y" %}
+          <em>{{ paper.venue }}</em>{% unless paper.venue contains paper_year %}, {{ paper_year }}{% endunless %}
         </li>
         {% endif %}
       {% endfor %}
