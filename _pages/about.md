@@ -139,7 +139,7 @@ redirect_from:
   <section id="experience" class="single-page__section">
     <h2><span class="lang-en">💼 Experience</span><span class="lang-zh">💼 工作经历</span></h2>
     <div class="resume-list">
-      <div class="resume-item">
+      <!-- <div class="resume-item">
         <div class="resume-item__date"><span class="lang-en">October 2025 - February 2026</span><span class="lang-zh">2025年10月 - 2026年2月</span></div>
         <div class="resume-item__content">
           <div class="resume-item__header">
@@ -150,7 +150,7 @@ redirect_from:
             OpenDataLab, OpenDataArena
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="resume-item">
         <div class="resume-item__date"><span class="lang-en">September 2023 - August 2024</span><span class="lang-zh">2023年9月 - 2024年8月</span></div>
